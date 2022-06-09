@@ -1,0 +1,11 @@
+name: flujo creado por mi
+on:
+  push:
+  workflow_dispatch:
+  issues:
+    types: [opened, transferred, assigned]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "🎉 El nombre del flujo de trabajo es ${{ github.workflow }}."
